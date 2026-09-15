@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Samsung SmartCam SNH-P6410BN Revival – RTSP, ONVIF & Wi-Fi</title>
+
+  <meta name="description" content="Bring your Samsung SmartCam SNH-P6410BN back to life. Step-by-step FR/EN guide for RTSP, ONVIF, Wi-Fi, VLC, Synology Surveillance Station and Home Assistant.">
+
+  <meta name="keywords" content="Samsung SmartCam SNH-P6410BN, SNH-P6410BN RTSP, SNH-P6410BN ONVIF, SmartCam discontinued, Samsung SmartCam revival, Synology Surveillance Station, Home Assistant, VLC">
+
+  <meta name="robots" content="index, follow">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #17202a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #061d35, #063e70);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 auto 15px;
+      max-width: 950px;
+      font-size: 44px;
+      line-height: 1.15;
+    }
+
+    header h2 {
+      margin: 0 auto 25px;
+      max-width: 850px;
+      font-weight: normal;
+      color: #58c9ff;
+    }
+
+    .price {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .button {
+      display: inline-block;
+      background: #139ee8;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 15px 28px;
+      border-radius: 8px;
+      margin: 8px;
+    }
+
+    .button:hover {
+      background: #087fc0;
+    }
+
+    .secondary {
+      background: transparent;
+      border: 1px solid #58c9ff;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 45px 22px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 25px;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 3px 14px rgba(0,0,0,.07);
+    }
+
+    h2, h3 { color: #063e70; }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .feature {
+      background: #f0f8fd;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .notice {
+      border-left: 5px solid #139ee8;
+      padding: 15px 20px;
+      background: #eef8fe;
+      margin: 20px 0;
+    }
+
+    .cta {
+      text-align: center;
+      background: #061d35;
+      color: white;
+    }
+
+    .cta h2 { color: #58c9ff; }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #68737d;
+      font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+      header { padding: 45px 18px; }
+      header h1 { font-size: 32px; }
+      section { padding: 22px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Bring Your Samsung SmartCam SNH-P6410BN Back to Life</h1>
+  <h2>RTSP • ONVIF • Wi-Fi • Local Access</h2>
+
+  <p>
+    Your camera still works. The original ecosystem may be obsolete,
+    but the hardware doesn't have to become electronic waste.
+  </p>
+
+  <div class="price">Complete FR + EN Guide — €5</div>
+
+  <a class="button"
+     href="https://smartcamrevival.gumroad.com/l/smartcam-p6410-revival">
+     Get the complete guide
+  </a>
+
+  <a class="button secondary" href="#fr">
+     Version française ↓
+  </a>
+</header>
+
+<main>
+
+<section>
+  <h2>Samsung SmartCam stopped working?</h2>
+
+  <p>
+    Many Samsung SmartCam SNH-P6410BN cameras are still perfectly
+    functional even though their original software ecosystem has
+    become obsolete.
+  </p>
+
+  <p>
+    I own several SNH-P6410BN cameras and spent hours understanding
+    how to bring them back into useful service.
+    I then reproduced and tested the procedure on multiple cameras.
+  </p>
+
+  <div class="notice">
+    <strong>No Samsung firmware is modified.</strong><br>
+    No manufacturer code is modified. The procedure relies on
+    reconfiguring functionality already present in the camera.
+  </div>
+
+  <div class="features">
+    <div class="feature">📹 RTSP streaming</div>
+    <div class="feature">🔗 ONVIF</div>
+    <div class="feature">📶 Wi-Fi</div>
+    <div class="feature">🏠 Local access</div>
+  </div>
+</section>
+
+<section>
+  <h2>What does the guide cover?</h2>
+
+  <ul>
+    <li>Finding the camera's IP address</li>
+    <li>Using PowerShell, including for beginners</li>
+    <li>The tested RESET procedure</li>
+    <li>Private Key configuration</li>
+    <li>Direct access to the iPOLiS interface</li>
+    <li>Enabling and testing RTSP</li>
+    <li>Testing the video stream with VLC</li>
+    <li>Reconnecting the camera to Wi-Fi</li>
+    <li>Final testing without the Ethernet cable</li>
+    <li>Main troubleshooting cases</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Use your SmartCam with modern software</h2>
+
+  <p>Once restored, the camera can be reused with compatible RTSP/ONVIF solutions such as:</p>
+
+  <div class="features">
+    <div class="feature">VLC</div>
+    <div class="feature">Synology<br>Surveillance Station</div>
+    <div class="feature">Home Assistant</div>
+    <div class="feature">Blue Iris</div>
+    <div class="feature">Agent DVR / iSpy</div>
+    <div class="feature">Frigate</div>
+  </div>
+</section>
+
+<section id="fr">
+  <h2>🇫🇷 Redonnez vie à votre Samsung SmartCam SNH-P6410BN</h2>
+
+  <p>
+    Votre caméra fonctionne probablement encore. C'est principalement
+    son ancien environnement logiciel qui est devenu obsolète.
+  </p>
+
+  <p>
+    Après plusieurs heures de recherches, j'ai réussi à remettre en
+    service mes propres SNH-P6410BN, puis j'ai reproduit et validé la
+    procédure sur plusieurs caméras.
+  </p>
+
+  <div class="notice">
+    <strong>Aucun firmware constructeur n'est modifié.</strong><br>
+    Aucun code Samsung n'est modifié. La méthode repose uniquement sur
+    le reparamétrage de fonctions déjà présentes dans la caméra.
+  </div>
+
+  <h3>Le guide illustré explique pas à pas :</h3>
+
+  <ul>
+    <li>comment retrouver l'adresse IP de la caméra ;</li>
+    <li>comment utiliser PowerShell, même pour un débutant ;</li>
+    <li>la procédure RESET testée ;</li>
+    <li>la gestion de la Private Key ;</li>
+    <li>l'accès direct à l'interface iPOLiS ;</li>
+    <li>l'activation et le test du flux RTSP ;</li>
+    <li>le test de l'image avec VLC ;</li>
+    <li>la reconnexion au Wi-Fi ;</li>
+    <li>les contrôles finaux sans câble Ethernet ;</li>
+    <li>les principaux cas de dépannage.</li>
+  </ul>
+
+  <p>
+    Vous pourrez ensuite utiliser la caméra avec des solutions
+    compatibles RTSP/ONVIF comme VLC, Synology Surveillance Station,
+    Home Assistant, Blue Iris, Agent DVR/iSpy, Frigate et différents NVR.
+  </p>
+</section>
+
+<section class="cta">
+  <h2>Don't throw it away. Bring it back to life.</h2>
+
+  <p>
+    Complete illustrated guide in <strong>English + French</strong>.
+  </p>
+
+  <p class="price">€5</p>
+
+  <a class="button"
+     href="https://smartcamrevival.gumroad.com/l/smartcam-p6410-revival">
+     Get the complete step-by-step guide
+  </a>
+
+  <p>♻️ Why throw away hardware that still works?</p>
+</section>
+
+</main>
+
+<footer>
+  <strong>SmartCam Revival</strong><br>
+  Independent guide for Samsung SmartCam SNH-P6410BN owners.<br>
+  Samsung and SmartCam are trademarks of their respective owners.
+  This website is not affiliated with or endorsed by Samsung.
+</footer>
+
+</body>
+</html>
