@@ -182,7 +182,9 @@
         padding: 22px;
       }
     }
+    .quick-links{text-align:center;margin:0 0 28px}.quick-links a{color:#063e70;margin:0 8px;font-weight:bold;text-decoration:none}.faq details{border-top:1px solid #dce5ec;padding:14px 0}.faq details:first-of-type{border-top:0}.faq summary{cursor:pointer;font-weight:bold;color:#063e70}.faq p{margin-bottom:0}.mini-cta{text-align:center;margin-top:22px}
   </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can a Samsung SmartCam SNH-P6410BN still be used locally?","acceptedAnswer":{"@type":"Answer","text":"Yes. If the hardware is still operational, it can be recommissioned for local use with RTSP and Wi-Fi."}},{"@type":"Question","name":"Does the procedure install modified Samsung firmware?","acceptedAnswer":{"@type":"Answer","text":"No. It reconfigures functions already present in the camera and does not install modified manufacturer firmware."}},{"@type":"Question","name":"Is the guide available in French?","acceptedAnswer":{"@type":"Answer","text":"Yes. The package contains both English and French illustrated manuals."}}]}</script>
 </head>
 
 <body>
@@ -210,6 +212,7 @@
 
 
 <main>
+  <div class="quick-links"><a href="#how">How it works</a> · <a href="#compatibility">Compatibility</a> · <a href="#faq">FAQ</a> · <a href="#fr">Français</a></div>
 
   <section>
     <h2>Samsung SmartCam stopped working?</h2>
@@ -234,8 +237,8 @@
   </section>
 
 
-  <section>
-    <h2>SmartCam Access Error, RTSP and ONVIF</h2>
+  <section id="how">
+    <h2>SNH-P6410BN Access Error, RTSP and ONVIF</h2>
 
     <p>
       A common problem with older Samsung SmartCam SNH-P6410BN cameras
@@ -257,7 +260,7 @@
   </section>
 
 
-  <section>
+  <section id="compatibility">
     <h2>What you can recover</h2>
 
     <div class="features">
@@ -320,6 +323,17 @@
   </section>
 
 
+  <section id="faq" class="faq">
+    <h2>Samsung SmartCam SNH-P6410BN FAQ</h2>
+    <details open><summary>Can a Samsung SmartCam SNH-P6410BN still be used locally?</summary><p>Yes. If the hardware is still operational, the camera can be recommissioned for local use. The guide focuses on restoring useful local access and validating RTSP video and Wi-Fi operation.</p></details>
+    <details><summary>What does “Access Error” mean on an SNH-P6410BN?</summary><p>An Access Error does not necessarily mean the camera hardware has failed. The guide shows the checks used to recover the local interface on tested cameras.</p></details>
+    <details><summary>Can I use the SNH-P6410BN with Synology Surveillance Station?</summary><p>The recovered local RTSP stream can be used with compatible surveillance software such as Synology Surveillance Station. Compatibility depends on your configuration and software version.</p></details>
+    <details><summary>Can I use it with Home Assistant?</summary><p>A working local network stream can be integrated into Home Assistant using an appropriate camera or RTSP integration.</p></details>
+    <details><summary>Does the procedure install modified Samsung firmware?</summary><p>No. It does not install modified manufacturer firmware or modify Samsung source code. It reconfigures functions already present in the camera.</p></details>
+    <details><summary>Is the guide available in French?</summary><p>Yes. The €5 package contains both the English and French illustrated manuals.</p></details>
+    <div class="mini-cta"><a class="button" href="https://smartcamrevival.gumroad.com/l/smartcam-p6410-revival" target="_blank" rel="noopener">Get the FR + EN guide — €5</a></div>
+  </section>
+
   <section id="guide" class="cta">
     <h2>Don't throw it away. Bring it back to life.</h2>
 
@@ -330,7 +344,7 @@
 
     <p class="price">€5</p>
 
-    <a class="button" href="#">
+    <a class="button" href="https://smartcamrevival.gumroad.com/l/smartcam-p6410-revival" target="_blank" rel="noopener">
       Get the complete step-by-step guide
     </a>
 
@@ -387,7 +401,7 @@
 
     <p class="price">€5</p>
 
-    <a class="button" href="#">
+    <a class="button" href="https://smartcamrevival.gumroad.com/l/smartcam-p6410-revival" target="_blank" rel="noopener">
       Obtenir le guide complet
     </a>
   </section>
